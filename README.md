@@ -307,10 +307,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📬 Proposal Letter
+## 📬 A Note for the Founders
 
-This project includes a professional letter to the WordUp co-founders:
-- **[Letter to Co-Founders](./letter-to-wordup-co-founders.html)** - UX enhancement proposal and collaboration opportunity
+This project includes a friendly letter to Paymon & Somayeh:
+- **[Letter to Paymon & Somayeh](./letter-to-paymon-and-somayeh.html)** - A personal note sharing UX ideas and appreciation
 
 ---
 

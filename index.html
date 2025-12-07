@@ -1507,96 +1507,152 @@
             color: var(--text-muted);
         }
 
-        /* Letter Banner */
+        /* Letter Banner - Physical Letter Style */
         .letter-banner {
-            background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
-            border-radius: var(--radius-lg);
-            padding: 20px;
+            background: linear-gradient(135deg, #fffef9 0%, #faf8f3 100%);
+            border-radius: 3px;
+            padding: 0;
             margin-bottom: 20px;
             position: relative;
             overflow: hidden;
-            box-shadow: var(--shadow-md);
+            box-shadow: 
+                0 1px 3px rgba(0,0,0,0.08),
+                0 4px 12px rgba(0,0,0,0.06),
+                inset 0 1px 0 rgba(255,255,255,0.9);
+            border: 1px solid #e8e4dc;
         }
 
         .letter-banner::before {
             content: '';
             position: absolute;
-            top: -50px;
-            right: -50px;
-            width: 150px;
-            height: 150px;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #7C3AED 0%, #a855f7 50%, #7C3AED 100%);
+        }
+
+        .letter-banner::after {
+            content: '✉';
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            font-size: 28px;
+            opacity: 0.15;
         }
 
         [data-theme="dark"] .letter-banner {
-            background: linear-gradient(135deg, #2D1B69 0%, #1A0F3C 100%);
+            background: linear-gradient(135deg, #1e1e3f 0%, #16162a 100%);
+            border-color: #2D2D5A;
+        }
+
+        [data-theme="dark"] .letter-banner::after {
+            opacity: 0.1;
         }
 
         .letter-banner-content {
             display: flex;
-            align-items: center;
-            gap: 16px;
+            flex-direction: column;
+            gap: 12px;
+            padding: 24px 22px 20px;
             position: relative;
             z-index: 1;
         }
 
-        .letter-banner-icon {
-            width: 48px;
-            height: 48px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 50%;
+        .letter-banner-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #ddd8cc;
+        }
+
+        [data-theme="dark"] .letter-banner-header {
+            border-color: #3d3d6a;
+        }
+
+        .letter-banner-stamp {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, #7C3AED 0%, #9333ea 100%);
+            border-radius: 4px;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
+            box-shadow: 0 2px 4px rgba(124, 58, 237, 0.3);
+            border: 2px solid rgba(255,255,255,0.2);
         }
 
-        .letter-banner-icon svg {
-            width: 24px;
-            height: 24px;
+        .letter-banner-stamp svg {
+            width: 22px;
+            height: 22px;
             color: white;
         }
 
-        .letter-banner-text {
+        .letter-banner-from {
             flex: 1;
         }
 
+        .letter-banner-label {
+            font-size: 9px;
+            font-weight: 600;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 2px;
+        }
+
+        [data-theme="dark"] .letter-banner-label {
+            color: #6B6B8D;
+        }
+
         .letter-banner-title {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 700;
-            color: white;
-            margin-bottom: 4px;
+            color: #2d2d2d;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        [data-theme="dark"] .letter-banner-title {
+            color: #F1F5F9;
+        }
+
+        .letter-banner-body {
+            padding: 0;
         }
 
         .letter-banner-subtitle {
             font-size: 13px;
-            color: rgba(255,255,255,0.9);
+            color: #666;
+            line-height: 1.5;
+            font-style: italic;
+        }
+
+        [data-theme="dark"] .letter-banner-subtitle {
+            color: #A1A1C7;
         }
 
         .letter-banner-link {
-            padding: 10px 20px;
-            background: rgba(255,255,255,0.25);
-            border: 1.5px solid rgba(255,255,255,0.4);
-            border-radius: var(--radius-sm);
-            font-size: 13px;
-            font-weight: 700;
-            color: white;
-            text-decoration: none;
             display: inline-flex;
             align-items: center;
             gap: 8px;
+            padding: 10px 18px;
+            background: linear-gradient(135deg, #7C3AED 0%, #9333ea 100%);
+            border: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
             transition: all 0.2s;
-            white-space: nowrap;
-            margin-top: 12px;
+            margin-top: 14px;
+            box-shadow: 0 2px 6px rgba(124, 58, 237, 0.3);
         }
 
         .letter-banner-link:hover {
-            background: rgba(255,255,255,0.35);
-            border-color: rgba(255,255,255,0.6);
-            transform: translateY(-1px);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
         }
 
         .letter-banner-link svg {
@@ -1606,13 +1662,7 @@
 
         @media (max-width: 767px) {
             .letter-banner-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .letter-banner-link {
-                width: 100%;
-                justify-content: center;
+                padding: 20px 18px 18px;
             }
         }
 
@@ -1954,19 +2004,24 @@
         <!-- Letter Banner -->
         <div class="letter-banner">
             <div class="letter-banner-content">
-                <div class="letter-banner-icon">
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                    </svg>
-                </div>
-                <div class="letter-banner-text">
-                    <div class="letter-banner-title">Letter to WordUp Co-Founders</div>
-                    <div class="letter-banner-subtitle">A professional proposal regarding WordUp UX enhancements and collaboration opportunities with Paymon Khamooshi & Somayeh Aghnia</div>
-                    <a href="./letter-to-wordup-co-founders.html" class="letter-banner-link" target="_blank">
+                <div class="letter-banner-header">
+                    <div class="letter-banner-stamp">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
-                        Read Full Letter
+                    </div>
+                    <div class="letter-banner-from">
+                        <div class="letter-banner-label">A note for</div>
+                        <div class="letter-banner-title">Paymon & Somayeh</div>
+                    </div>
+                </div>
+                <div class="letter-banner-body">
+                    <div class="letter-banner-subtitle">"Thank you for WordUp! I couldn't resist putting together some UX ideas..."</div>
+                    <a href="./letter-to-paymon-and-somayeh.html" class="letter-banner-link" target="_blank">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                        Read the letter
                     </a>
                 </div>
             </div>

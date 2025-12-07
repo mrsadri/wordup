@@ -16,7 +16,7 @@ This project contains a comprehensive UX/UI enhancement proposal for the WordUp 
 ```
 wordup/
 ├── index.html                       # Main application (enhanced UI)
-├── letter-to-wordup-co-founders.html # Professional letter to founders
+├── letter-to-paymon-and-somayeh.html # Friendly letter to founders
 ├── README.md                        # Project documentation
 ├── LICENSE                          # MIT License
 ├── .gitignore                       # Git ignore rules

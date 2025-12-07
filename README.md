@@ -8,7 +8,7 @@
 
 **A comprehensive UX/UI redesign proposal for the WordUp English learning application**
 
-[Live Demo](https://yourusername.github.io/wordup/) • [Documentation](./docs/README.md) • [Report Issues](https://github.com/yourusername/wordup/issues)
+[Live Demo](https://mrsadri.github.io/wordup/) • [Documentation](./docs/README.md) • [Report Issues](https://github.com/mrsadri/wordup/issues)
 
 </div>
 
@@ -170,7 +170,7 @@ wordup/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/wordup.git
+   git clone https://github.com/mrsadri/wordup.git
    cd wordup
    ```
 

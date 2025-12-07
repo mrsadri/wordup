@@ -9,18 +9,28 @@
 
 ## 🎯 Overview
 
-This project contains a comprehensive UX/UI enhancement proposal for the WordUp application. The redesign addresses critical usability issues while maintaining the app's brand identity and core functionality.
+This project contains a comprehensive UX/UI enhancement proposal for the WordUp application, created by **Paymon Khamooshi** and **Somayeh Aghnia**. The redesign addresses critical usability issues while maintaining the app's brand identity and core functionality.
 
 ## 📁 Project Structure
 
 ```
 wordup/
-├── WordUp - Enhanced.html      # ← Redesigned interface
-├── UX_IMPROVEMENTS.md          # ← Detailed documentation
-├── README.md                   # ← This file
-├── WordUp - Learn English.html # ← Original (reference)
-└── WordUp - Learn English_files/
-    └── [assets]                # ← Existing assets
+├── index.html                       # Main application (enhanced UI)
+├── letter-to-wordup-co-founders.html # Professional letter to founders
+├── README.md                        # Project documentation
+├── LICENSE                          # MIT License
+├── .gitignore                       # Git ignore rules
+│
+├── assets/
+│   └── images/                      # All image assets
+│       ├── *.webp                   # Profile images
+│       ├── *.png                    # Icons and UI elements
+│       └── *.jpg                    # Content images
+│
+└── docs/
+    ├── README.md                    # This file
+    ├── UX_IMPROVEMENTS.md           # UX analysis and solutions
+    └── LAYOUT_REVIEW.md             # Responsive design review
 ```
 
 ## 🔥 Key Improvements
@@ -49,12 +59,13 @@ wordup/
 - Consistent color system
 - Card-based design
 - Smooth interactions
+- Full dark mode support
 
 ## 🚀 Quick Start
 
-1. Open `WordUp - Enhanced.html` in any modern browser
-2. Compare with `WordUp - Learn English.html` (original)
-3. Read `UX_IMPROVEMENTS.md` for detailed analysis
+1. Open `index.html` in any modern browser
+2. View the letter at `letter-to-wordup-co-founders.html`
+3. Read `docs/UX_IMPROVEMENTS.md` for detailed analysis
 
 ## 📊 Issues Addressed
 
@@ -77,12 +88,14 @@ wordup/
 
 - ✅ Mobile-first responsive design
 - ✅ Modern browsers (Chrome, Safari, Firefox, Edge)
-- ✅ Max-width optimized for mobile (430px)
+- ✅ Dark mode with system preference detection
+- ✅ Fully responsive (320px to 1440px+)
 
 ## 📖 Documentation
 
 For a complete analysis of issues and solutions, see:
 - [UX Improvements Documentation](./UX_IMPROVEMENTS.md)
+- [Layout Review](./LAYOUT_REVIEW.md)
 
 ## 🤝 About This Proposal
 
@@ -94,4 +107,4 @@ This enhancement demonstrates:
 
 ---
 
-*Created as a UX enhancement proposal for the WordUp team*
+*Created as a UX enhancement proposal for the WordUp team by Masih Sadri*

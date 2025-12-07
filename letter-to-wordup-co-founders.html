@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter to Paymon Khamooshi & Somayeh Aghnia - WordUp UX Enhancement Proposal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      font-size: 13pt;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #f5f5f5;
+      padding: 40px;
+    }
+
+    .letter {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      padding: 60px 70px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    }
+
+    .header {
+      margin-bottom: 40px;
+      padding-bottom: 25px;
+      border-bottom: 2px solid #7C3AED;
+    }
+
+    .sender-name {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 22pt;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 4px;
+    }
+
+    .sender-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 10pt;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+    }
+
+    .sender-contact {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 9.5pt;
+      color: #888;
+    }
+
+    .date {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 10pt;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .recipient {
+      margin-bottom: 25px;
+    }
+
+    .recipient-name {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11pt;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 4px;
+    }
+
+    .recipient-details {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 10pt;
+      color: #666;
+    }
+
+    .subject {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11pt;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 25px;
+      padding: 12px 16px;
+      background: #fafafa;
+      border-left: 3px solid #7C3AED;
+    }
+
+    .salutation {
+      margin-bottom: 20px;
+    }
+
+    .body p {
+      margin-bottom: 18px;
+      text-align: justify;
+    }
+
+    .body strong {
+      color: #1a1a1a;
+      font-weight: 600;
+    }
+
+    .section-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11pt;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    .highlights {
+      margin: 20px 0;
+      padding-left: 20px;
+    }
+
+    .highlights li {
+      margin-bottom: 12px;
+      padding-left: 8px;
+    }
+
+    .highlights li::marker {
+      color: #7C3AED;
+    }
+
+    .link-box {
+      margin: 25px 0;
+      padding: 16px 20px;
+      background: #fafafa;
+      border-left: 3px solid #7C3AED;
+      border-radius: 2px;
+    }
+
+    .link-box strong {
+      font-family: 'DM Sans', sans-serif;
+      display: block;
+      font-size: 10pt;
+      font-weight: 600;
+      color: #7C3AED;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .link-box a {
+      color: #7C3AED;
+      text-decoration: none;
+      word-break: break-all;
+      font-size: 10.5pt;
+    }
+
+    .link-box a:hover {
+      text-decoration: underline;
+    }
+
+    .closing {
+      margin-top: 35px;
+    }
+
+    .signature {
+      margin-top: 30px;
+    }
+
+    .signature-name {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      font-size: 12pt;
+      color: #1a1a1a;
+    }
+
+    .signature-details {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 9.5pt;
+      color: #666;
+      margin-top: 4px;
+      line-height: 1.6;
+    }
+
+    .ps {
+      margin-top: 25px;
+      font-style: italic;
+      font-size: 11pt;
+      color: #666;
+      padding-top: 20px;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .letter {
+        box-shadow: none;
+        padding: 50px 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="letter">
+    <div class="header">
+      <div class="sender-name">Masih Sadri</div>
+      <div class="sender-title">Product Designer</div>
+      <div class="sender-contact">sadrimasih@gmail.com · linkedin.com/in/msadri · https://mrsadri.github.io/Portfolio/</div>
+    </div>
+
+    <div class="date">
+      <script>
+        document.write(new Date().toLocaleDateString('en-US', { 
+          year: 'numeric', 
+          month: 'long', 
+          day: 'numeric' 
+        }));
+      </script>
+    </div>
+
+    <div class="recipient">
+      <div class="recipient-name">Paymon Khamooshi & Somayeh Aghnia</div>
+      <div class="recipient-details">Co-Founders, WordUp App · London School of Innovation</div>
+    </div>
+
+    <div class="subject">
+      Re: WordUp UX Enhancement Proposal & Collaboration Opportunity
+    </div>
+
+    <div class="salutation">Dear Paymon and Somayeh,</div>
+
+    <div class="body">
+      <p>
+        I hope this message finds you both well. I wanted to reach out to express my appreciation for WordUp—I've been using the app extensively and truly value the innovative approach you've taken to English language learning. Your vision of enabling people to "visualize the gaps in their knowledge and then gradually eliminate them as efficiently and effortlessly as possible" resonates deeply with me. The combination of AI technology with proven learning techniques is genuinely impressive, and with over 6 million users and a 4.8-star rating (higher than any other major language learning app!), the impact speaks for itself.
+      </p>
+
+      <p>
+        As a Product Designer with 6+ years of experience working on products serving 40M+ users (including Divar and IR-MCI), I've developed a keen eye for identifying UX opportunities that can enhance user engagement and learning outcomes. During my time using WordUp, I've identified several critical UX issues that, if addressed, could significantly improve user comprehension and retention.
+      </p>
+
+      <div class="section-title">Key Issues Identified:</div>
+
+      <ol class="highlights">
+        <li>
+          <strong>Unclear Learning Funnel Visualization</strong> – The relationship between "Uncovered Words," "Already Knew," "To Learn," and "In Progress" isn't visually obvious, making it difficult for users to understand their learning journey at a glance.
+        </li>
+
+        <li>
+          <strong>Profile Image Misplacement</strong> – The profile image's placement next to statistics creates cognitive confusion about data ownership and personalization.
+        </li>
+
+        <li>
+          <strong>Numbers Without Context</strong> – Several metrics lack clear labels and visual hierarchy, making it challenging for users to quickly understand their progress.
+        </li>
+
+        <li>
+          <strong>Information Architecture</strong> – The hero section could benefit from a clearer information hierarchy to guide users toward their next learning action.
+        </li>
+      </ol>
+
+      <div class="section-title">What I've Created:</div>
+
+      <p>
+        I've invested time in creating a refined UI proposal that addresses these issues. The enhanced design includes:
+      </p>
+
+      <ul class="highlights">
+        <li><strong>Visual Learning Funnel</strong> – A step-by-step journey visualization that makes the learning process immediately clear</li>
+        <li><strong>Improved Information Hierarchy</strong> – Separated profile section with personalized greeting and clear statistics</li>
+        <li><strong>Enhanced Visual Design</strong> – Modern, clean interface with better color coding and iconography</li>
+        <li><strong>Dark Mode Support</strong> – Full theme implementation for better accessibility</li>
+        <li><strong>Responsive Design</strong> – Optimized for all device sizes</li>
+      </ul>
+
+      <p>
+        <strong>Note:</strong> This is a UI-only prototype (no backend connection) created to demonstrate the UX improvements visually.
+      </p>
+
+      <div class="link-box">
+        <strong>Refined Version</strong>
+        <a href="https://mrsadri.github.io/wordup/" target="_blank">https://mrsadri.github.io/wordup/</a>
+      </div>
+
+      <div class="section-title">My Offer:</div>
+
+      <p>
+        I believe WordUp has tremendous potential, and I'd love to help ensure it's maintained and improved in a way that maximizes user value. Given my experience in:
+      </p>
+
+      <ul class="highlights">
+        <li>Data-driven design decisions</li>
+        <li>Building scalable design systems</li>
+        <li>Improving user flows and conversion rates</li>
+        <li>Working with cross-functional teams</li>
+      </ul>
+
+      <p>
+        I would be honored to contribute to WordUp's continued success. Whether that means:
+      </p>
+
+      <ul class="highlights">
+        <li>Conducting a comprehensive UX audit across all app pages</li>
+        <li>Implementing design system improvements</li>
+        <li>Collaborating on user research and testing</li>
+        <li>Providing ongoing design consultation</li>
+      </ul>
+
+      <p>
+        I'm open to discussing how I can best support your team.
+      </p>
+
+      <p>
+        I understand you're building something special with LSI and WordUp—your vision of being "the first language learning app that connects the world" is ambitious and inspiring. As serial entrepreneurs who have successfully launched and scaled WordUp since 2019 to serve millions of users worldwide, I believe my experience in data-driven design and scalable systems could complement your journey. If you'd like to discuss this further or have any questions about the proposed improvements, please don't hesitate to reach out.
+      </p>
+
+      <p>
+        Thank you again for creating such an impactful learning platform.
+      </p>
+    </div>
+
+    <div class="closing">Best regards,</div>
+
+    <div class="signature">
+      <div class="signature-name">Masih Sadri</div>
+      <div class="signature-details">
+        Product Designer<br>
+        Email: sadrimasih@gmail.com<br>
+        LinkedIn: linkedin.com/in/msadri<br>
+        Portfolio: https://mrsadri.github.io/Portfolio/
+      </div>
+    </div>
+
+    <div class="ps">
+      P.S. I've also documented the UX improvements and rationale in detail, which I'm happy to share if you're interested in a deeper dive into the design decisions.
+    </div>
+  </div>
+</body>
+</html>

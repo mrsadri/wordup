@@ -39,3 +39,9 @@ build/
 .env
 .env.local
 
+# PDF files
+*.pdf
+
+# Research and reference materials
+telling them/
+

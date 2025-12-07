@@ -301,9 +301,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
+- **Paymon Khamooshi & Somayeh Aghnia** - WordUp co-founders for creating this impactful learning platform
 - WordUp team for the original application design
 - Google Fonts for Plus Jakarta Sans font family
-- All contributors and feedback providers
+
+---
+
+## 📬 Proposal Letter
+
+This project includes a professional letter to the WordUp co-founders:
+- **[Letter to Co-Founders](./letter-to-wordup-co-founders.html)** - UX enhancement proposal and collaboration opportunity
 
 ---
 
@@ -311,6 +318,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with ❤️ by Masih Sadri**
 
-[Portfolio](https://yourportfolio.com) • [LinkedIn](https://linkedin.com/in/yourprofile) • [Email](mailto:your.email@example.com)
+[Portfolio](https://mrsadri.github.io/Portfolio/) • [LinkedIn](https://linkedin.com/in/msadri) • [Email](mailto:sadrimasih@gmail.com)
 
 </div>
